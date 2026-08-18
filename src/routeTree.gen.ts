@@ -10,33 +10,128 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CustomDesignsRouteImport } from './routes/custom-designs'
+import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as CastlesIndexRouteImport } from './routes/castles.index'
+import { Route as CastlesSlugRouteImport } from './routes/castles.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CustomDesignsRoute = CustomDesignsRouteImport.update({
+  id: '/custom-designs',
+  path: '/custom-designs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqsRoute = FaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowItWorksRoute = HowItWorksRouteImport.update({
+  id: '/how-it-works',
+  path: '/how-it-works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CastlesIndexRoute = CastlesIndexRouteImport.update({
+  id: '/castles/',
+  path: '/castles/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CastlesSlugRoute = CastlesSlugRouteImport.update({
+  id: '/castles/$slug',
+  path: '/castles/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/custom-designs': typeof CustomDesignsRoute
+  '/faqs': typeof FaqsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/castles/$slug': typeof CastlesSlugRoute
+  '/castles/': typeof CastlesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/custom-designs': typeof CustomDesignsRoute
+  '/faqs': typeof FaqsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/castles/$slug': typeof CastlesSlugRoute
+  '/castles': typeof CastlesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/custom-designs': typeof CustomDesignsRoute
+  '/faqs': typeof FaqsRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/castles/$slug': typeof CastlesSlugRoute
+  '/castles/': typeof CastlesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/custom-designs'
+    | '/faqs'
+    | '/how-it-works'
+    | '/castles/$slug'
+    | '/castles/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/custom-designs'
+    | '/faqs'
+    | '/how-it-works'
+    | '/castles/$slug'
+    | '/castles'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/custom-designs'
+    | '/faqs'
+    | '/how-it-works'
+    | '/castles/$slug'
+    | '/castles/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  CustomDesignsRoute: typeof CustomDesignsRoute
+  FaqsRoute: typeof FaqsRoute
+  HowItWorksRoute: typeof HowItWorksRoute
+  CastlesSlugRoute: typeof CastlesSlugRoute
+  CastlesIndexRoute: typeof CastlesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +143,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/custom-designs': {
+      id: '/custom-designs'
+      path: '/custom-designs'
+      fullPath: '/custom-designs'
+      preLoaderRoute: typeof CustomDesignsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faqs': {
+      id: '/faqs'
+      path: '/faqs'
+      fullPath: '/faqs'
+      preLoaderRoute: typeof FaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-it-works': {
+      id: '/how-it-works'
+      path: '/how-it-works'
+      fullPath: '/how-it-works'
+      preLoaderRoute: typeof HowItWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/castles/': {
+      id: '/castles/'
+      path: '/castles'
+      fullPath: '/castles/'
+      preLoaderRoute: typeof CastlesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/castles/$slug': {
+      id: '/castles/$slug'
+      path: '/castles/$slug'
+      fullPath: '/castles/$slug'
+      preLoaderRoute: typeof CastlesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  CustomDesignsRoute: CustomDesignsRoute,
+  FaqsRoute: FaqsRoute,
+  HowItWorksRoute: HowItWorksRoute,
+  CastlesSlugRoute: CastlesSlugRoute,
+  CastlesIndexRoute: CastlesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
