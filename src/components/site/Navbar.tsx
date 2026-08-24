@@ -38,7 +38,7 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
-          <Button asChild variant="hero" size="sm" className="hidden sm:inline-flex">
+          <Button asChild variant="default" size="sm" className="hidden sm:inline-flex">
             <Link to="/contact">Book Now</Link>
           </Button>
           <button
@@ -70,7 +70,7 @@ export function Navbar() {
               </li>
             ))}
             <li className="pt-2">
-              <Button asChild variant="hero" size="lg" className="w-full">
+              <Button asChild variant="default" size="lg" className="w-full">
                 <Link to="/contact" onClick={() => setOpen(false)}>
                   Book Now
                 </Link>

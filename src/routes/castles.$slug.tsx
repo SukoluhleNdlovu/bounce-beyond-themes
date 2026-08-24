@@ -111,7 +111,7 @@ function CastleDetail() {
             </dl>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button asChild variant="hero" size="xl">
+              <Button asChild variant="default" size="xl">
                 <Link to="/contact" search={{ castle: castle.slug }}>
                   Hire This Castle
                 </Link>
@@ -164,7 +164,7 @@ function CastleDetail() {
           <p className="mx-auto mt-2 max-w-xl text-sm opacity-90">
             We can restyle this castle with decor and colours that match your party theme.
           </p>
-          <Button asChild variant="sunny" size="lg" className="mt-5">
+          <Button asChild variant="default" size="lg" className="mt-5">
             <Link to="/custom-designs">Request Custom Design</Link>
           </Button>
         </section>

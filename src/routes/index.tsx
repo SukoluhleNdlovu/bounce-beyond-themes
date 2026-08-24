@@ -87,7 +87,7 @@ function Home() {
               custom designs made to match your theme.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild variant="hero" size="xl">
+              <Button asChild variant="default" size="xl">
                 <Link to="/castles">View Jumping Castles</Link>
               </Button>
               <Button asChild variant="outline" size="xl">
@@ -152,7 +152,7 @@ function Home() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Button asChild variant="grape" size="lg">
+            <Button asChild variant="default" size="lg">
               <Link to="/castles">
                 View All Jumping Castles <ArrowRight className="h-4 w-4" />
               </Link>
@@ -183,7 +183,7 @@ function Home() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Button asChild variant="hero" size="xl">
+            <Button asChild variant="default" size="xl">
               <Link to="/custom-designs">Create My Custom Theme</Link>
             </Button>
           </div>
@@ -240,7 +240,7 @@ function Home() {
             ))}
         </div>
         <div className="mt-8 text-center">
-          <Button asChild variant="sky" size="lg">
+          <Button asChild variant="default" size="lg">
             <Link to="/gallery">View Full Gallery</Link>
           </Button>
         </div>
@@ -283,7 +283,7 @@ function Home() {
             celebration.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Button asChild variant="sunny" size="xl">
+            <Button asChild variant="default" size="xl">
               <Link to="/castles">Browse Castles</Link>
             </Button>
             <Button asChild variant="outline" size="xl" className="bg-background">

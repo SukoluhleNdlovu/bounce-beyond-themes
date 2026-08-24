@@ -132,7 +132,7 @@ export function CustomDesignForm() {
         <Textarea id="cd-notes" name="notes" rows={3} className="mt-1.5 rounded-xl" />
       </div>
 
-      <Button type="submit" variant="hero" size="xl" className="w-full sm:w-auto">
+      <Button type="submit" variant="default" size="xl" className="w-full sm:w-auto">
         Submit Custom Design Request
       </Button>
     </form>

@@ -93,7 +93,7 @@ function Gallery() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button asChild variant="hero" size="lg">
+          <Button asChild variant="default" size="lg">
             <Link to="/contact">Book a Castle for Your Party</Link>
           </Button>
         </div>

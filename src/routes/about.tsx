@@ -69,7 +69,7 @@ function About() {
             Today we look after birthdays, school events, church days and family gatherings — and
             we still get just as excited about every single setup.
           </p>
-          <Button asChild variant="hero" size="lg" className="mt-6">
+          <Button asChild variant="default" size="lg" className="mt-6">
             <Link to="/contact">Let's plan your party</Link>
           </Button>
         </div>

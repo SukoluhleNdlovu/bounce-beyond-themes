@@ -60,7 +60,7 @@ function CustomDesigns() {
         title="Your Theme. Your Castle. Your Celebration."
         subtitle="Don't settle for a standard castle. We customise the decor, colours and styling of our jumping castles so they match your party theme perfectly."
       >
-        <Button asChild variant="sunny" size="xl">
+        <Button asChild variant="default" size="xl">
           <a href="#request">Start My Custom Design</a>
         </Button>
       </PageHero>
