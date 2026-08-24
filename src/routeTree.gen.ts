@@ -14,6 +14,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CustomDesignsRouteImport } from './routes/custom-designs'
 import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as CastlesIndexRouteImport } from './routes/castles.index'
 import { Route as CastlesSlugRouteImport } from './routes/castles.$slug'
@@ -43,6 +44,11 @@ const FaqsRoute = FaqsRouteImport.update({
   path: '/faqs',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const HowItWorksRoute = HowItWorksRouteImport.update({
   id: '/how-it-works',
   path: '/how-it-works',
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/custom-designs': typeof CustomDesignsRoute
   '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
   '/how-it-works': typeof HowItWorksRoute
   '/castles/$slug': typeof CastlesSlugRoute
   '/castles/': typeof CastlesIndexRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/custom-designs': typeof CustomDesignsRoute
   '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
   '/how-it-works': typeof HowItWorksRoute
   '/castles/$slug': typeof CastlesSlugRoute
   '/castles': typeof CastlesIndexRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/custom-designs': typeof CustomDesignsRoute
   '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
   '/how-it-works': typeof HowItWorksRoute
   '/castles/$slug': typeof CastlesSlugRoute
   '/castles/': typeof CastlesIndexRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/custom-designs'
     | '/faqs'
+    | '/gallery'
     | '/how-it-works'
     | '/castles/$slug'
     | '/castles/'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/custom-designs'
     | '/faqs'
+    | '/gallery'
     | '/how-it-works'
     | '/castles/$slug'
     | '/castles'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/custom-designs'
     | '/faqs'
+    | '/gallery'
     | '/how-it-works'
     | '/castles/$slug'
     | '/castles/'
@@ -129,6 +141,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   CustomDesignsRoute: typeof CustomDesignsRoute
   FaqsRoute: typeof FaqsRoute
+  GalleryRoute: typeof GalleryRoute
   HowItWorksRoute: typeof HowItWorksRoute
   CastlesSlugRoute: typeof CastlesSlugRoute
   CastlesIndexRoute: typeof CastlesIndexRoute
@@ -171,6 +184,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/how-it-works': {
       id: '/how-it-works'
       path: '/how-it-works'
@@ -201,6 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   CustomDesignsRoute: CustomDesignsRoute,
   FaqsRoute: FaqsRoute,
+  GalleryRoute: GalleryRoute,
   HowItWorksRoute: HowItWorksRoute,
   CastlesSlugRoute: CastlesSlugRoute,
   CastlesIndexRoute: CastlesIndexRoute,

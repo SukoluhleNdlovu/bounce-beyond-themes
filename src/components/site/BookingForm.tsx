@@ -20,7 +20,7 @@ const eventTypes = [
 const fieldClass =
   "mt-1.5 h-11 w-full rounded-xl border border-input bg-background px-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring";
 
-export function BookingForm({ defaultCastle }: { defaultCastle?: string }) {
+export function BookingForm({ defaultCastle }: { defaultCastle?: string | undefined }) {
   const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
