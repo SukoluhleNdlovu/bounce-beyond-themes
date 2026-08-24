@@ -24,7 +24,7 @@ export const Route = createFileRoute("/gallery")({
       },
     ],
   }),
-  component: Gallery;
+  component: Gallery,
 });
 
 /** Placeholder gallery — swap in real party photos here. */
