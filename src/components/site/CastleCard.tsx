@@ -58,7 +58,7 @@ export function CastleCard({ castle }: { castle: Castle }) {
               View Details
             </Link>
           </Button>
-          <Button asChild variant="hero" className="flex-1">
+          <Button asChild variant="default" className="flex-1">
             <Link to="/contact" search={{ castle: castle.slug }}>
               Hire This Castle
             </Link>

@@ -68,7 +68,7 @@ function Faqs() {
           <p className="mt-2 text-sm text-muted-foreground">
             We're happy to help — send us a message and we'll get back to you.
           </p>
-          <Button asChild variant="hero" size="lg" className="mt-5">
+          <Button asChild variant="default" size="lg" className="mt-5">
             <Link to="/contact">Contact Us</Link>
           </Button>
         </div>

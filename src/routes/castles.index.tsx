@@ -84,7 +84,7 @@ function CastlesPage() {
             <p className="mt-2 text-sm text-muted-foreground">
               We can still build a custom design for this theme — just ask.
             </p>
-            <Button asChild variant="hero" className="mt-5">
+            <Button asChild variant="default" className="mt-5">
               <Link to="/custom-designs">Request a Custom Design</Link>
             </Button>
           </div>
@@ -102,7 +102,7 @@ function CastlesPage() {
             We customise our castles to match any birthday theme — from Barbie pink to space
             rockets.
           </p>
-          <Button asChild variant="hero" size="lg" className="mt-5">
+          <Button asChild variant="default" size="lg" className="mt-5">
             <Link to="/custom-designs">Request a Custom Design</Link>
           </Button>
         </div>

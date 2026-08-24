@@ -56,7 +56,7 @@ function HowItWorks() {
             come back to you personally.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Button asChild variant="hero" size="lg">
+            <Button asChild variant="default" size="lg">
               <Link to="/castles">Browse Castles</Link>
             </Button>
             <Button asChild variant="outline" size="lg">

@@ -169,7 +169,7 @@ export function BookingForm({ defaultCastle }: { defaultCastle?: string | undefi
       </fieldset>
 
       <div>
-        <Button type="submit" variant="hero" size="xl" className="w-full sm:w-auto">
+        <Button type="submit" variant="default" size="xl" className="w-full sm:w-auto">
           Request Booking
         </Button>
         <p className="mt-3 text-xs text-muted-foreground">
