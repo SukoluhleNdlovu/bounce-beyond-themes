@@ -6,13 +6,13 @@ import { steps } from "@/data/content";
 export const Route = createFileRoute("/how-it-works")({
   head: () => ({
     meta: [
-      { title: "How Jumping Castle Hire Works | Bounce & Beyond" },
+      { title: "How Jumping Castle Hire Works | Lulu Jump" },
       {
         name: "description",
         content:
           "Hiring a jumping castle is simple: choose your castle, choose your theme, send a booking request, we confirm, then deliver and set up for your event.",
       },
-      { property: "og:title", content: "How Jumping Castle Hire Works | Bounce & Beyond" },
+      { property: "og:title", content: "How Jumping Castle Hire Works | Lulu Jump" },
       {
         property: "og:description",
         content: "Five easy steps from browsing castles to bouncing at your party.",

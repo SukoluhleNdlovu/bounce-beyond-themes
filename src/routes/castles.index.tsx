@@ -8,13 +8,13 @@ import { castles, castleCategories, type CastleCategory } from "@/data/castles";
 export const Route = createFileRoute("/castles/")({
   head: () => ({
     meta: [
-      { title: "Jumping Castles for Hire | Bounce & Beyond" },
+      { title: "Jumping Castles for Hire | Lulu Jump" },
       {
         name: "description",
         content:
           "Browse our jumping castles for hire — princess, superhero, unicorn, dinosaur, safari and rainbow castles for birthdays, kids parties and events.",
       },
-      { property: "og:title", content: "Jumping Castles for Hire | Bounce & Beyond" },
+      { property: "og:title", content: "Jumping Castles for Hire | Lulu Jump" },
       {
         property: "og:description",
         content: "Browse our range of jumping castles for birthdays, kids parties and events.",

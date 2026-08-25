@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — Bounce & Beyond jumping castle hire.
+ * Design system — Lulu Jump jumping castle hire.
  * Playful party palette: sunshine yellow, party pink, grape purple,
  * sky blue and tangerine. All colours are oklch tokens.
  */
@@ -73,9 +73,9 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.24 0.05 300);
 
-  /* Warm neutral charcoal — blends with the playful palette while keeping buttons and hover states refined */
-  --primary: oklch(0.42 0.04 75);
-  --primary-foreground: oklch(0.985 0.005 80);
+  /* Brand blue for primary actions and buttons */
+  --primary: oklch(0.62 0.18 232);
+  --primary-foreground: oklch(0.99 0.01 232);
 
   /* Sky blue */
   --secondary: oklch(0.85 0.11 230);
@@ -92,7 +92,7 @@
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.91 0.02 310);
   --input: oklch(0.91 0.02 310);
-  --ring: oklch(0.42 0.04 75);
+  --ring: oklch(0.62 0.18 232);
 
   --sunshine: oklch(0.88 0.17 92);
   --sunshine-foreground: oklch(0.28 0.07 60);

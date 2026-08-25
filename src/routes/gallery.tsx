@@ -11,7 +11,7 @@ import heroImage from "@/assets/hero-castle.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery | Jumping Castles at Real Parties | Bounce & Beyond" },
+      { title: "Gallery | Jumping Castles at Real Parties | Lulu Jump" },
       {
         name: "description",
         content:

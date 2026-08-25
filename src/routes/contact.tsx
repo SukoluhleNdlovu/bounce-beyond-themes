@@ -13,13 +13,13 @@ export const Route = createFileRoute("/contact")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Book a Jumping Castle | Contact Bounce & Beyond" },
+      { title: "Book a Jumping Castle | Contact Lulu Jump" },
       {
         name: "description",
         content:
           "Request a jumping castle booking for your birthday party or event. Send us your date, location and theme and we'll confirm availability and pricing.",
       },
-      { property: "og:title", content: "Book a Jumping Castle | Contact Bounce & Beyond" },
+      { property: "og:title", content: "Book a Jumping Castle | Contact Lulu Jump" },
       {
         property: "og:description",
         content: "Send a booking request for your birthday party or event jumping castle hire.",

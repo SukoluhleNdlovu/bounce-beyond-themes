@@ -9,13 +9,13 @@ import { site } from "@/data/site";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us | Bounce & Beyond Jumping Castle Hire" },
+      { title: "About Us | Lulu Jump Jumping Castle Hire" },
       {
         name: "description",
         content:
           "We're a family-run jumping castle hire business creating memorable children's parties with clean, safe castles and custom party themes.",
       },
-      { property: "og:title", content: "About Us | Bounce & Beyond Jumping Castle Hire" },
+      { property: "og:title", content: "About Us | Lulu Jump Jumping Castle Hire" },
       {
         property: "og:description",
         content: "Family-run jumping castle hire focused on safe, creative and memorable parties.",

@@ -81,13 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Bounce & Beyond | Jumping Castle Hire for Kids Parties" },
+      { title: "Lulu Jump | Jumping Castle Hire for Kids Parties" },
       {
         name: "description",
         content:
           "Jumping castle hire for birthdays, kids parties and events — plus custom castle designs made to match your party theme. Delivery and setup included.",
       },
-      { name: "author", content: "Bounce & Beyond" },
+      { name: "author", content: "Lulu Jump" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

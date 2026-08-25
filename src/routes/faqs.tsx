@@ -12,13 +12,13 @@ import { faqs } from "@/data/content";
 export const Route = createFileRoute("/faqs")({
   head: () => ({
     meta: [
-      { title: "Jumping Castle Hire FAQs | Bounce & Beyond" },
+      { title: "Jumping Castle Hire FAQs | Lulu Jump" },
       {
         name: "description",
         content:
           "Answers to common questions about jumping castle hire: pricing, delivery, setup, space needed, custom themes, wet weather and booking lead times.",
       },
-      { property: "og:title", content: "Jumping Castle Hire FAQs | Bounce & Beyond" },
+      { property: "og:title", content: "Jumping Castle Hire FAQs | Lulu Jump" },
       {
         property: "og:description",
         content: "Pricing, delivery, setup, space, custom themes and booking questions answered.",

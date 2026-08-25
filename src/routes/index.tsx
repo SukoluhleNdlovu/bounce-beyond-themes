@@ -20,7 +20,7 @@ import partyDecor from "@/assets/party-decor.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Jumping Castle Hire for Birthdays & Kids Parties | Bounce & Beyond" },
+      { title: "Jumping Castle Hire for Birthdays & Kids Parties | Lulu Jump" },
       {
         name: "description",
         content:
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Jumping Castle Hire for Birthdays & Kids Parties | Bounce & Beyond",
+        content: "Jumping Castle Hire for Birthdays & Kids Parties | Lulu Jump",
       },
       {
         property: "og:description",
@@ -80,7 +80,7 @@ function Home() {
               <Sparkles className="h-4 w-4" /> Custom themes available
             </span>
             <h1 className="mt-4 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-              Make Their Special Day <span className="text-party">Unforgettable!</span>
+              Make Their Special Day <span className="text-sunshine">Unforgettable!</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-muted-foreground">
               Fun, colourful jumping castles for birthdays, parties and special events — with
@@ -176,9 +176,8 @@ function Home() {
                 key={t.name}
                 className="rounded-3xl border border-border bg-card p-5 text-center shadow-soft transition-transform duration-300 hover:-translate-y-1"
               >
-                <span className="text-3xl">{t.emoji}</span>
-                <h3 className="mt-2 text-base font-bold">{t.name}</h3>
-                <p className="mt-1 text-xs text-muted-foreground">{t.blurb}</p>
+                <h3 className="text-base font-bold">{t.name}</h3>
+                <p className="mt-2 text-xs text-muted-foreground">{t.blurb}</p>
               </div>
             ))}
           </div>

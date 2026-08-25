@@ -13,11 +13,11 @@ export const Route = createFileRoute("/castles/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) {
       return {
-        meta: [{ title: "Castle not found | Bounce & Beyond" }, { name: "robots", content: "noindex" }],
+        meta: [{ title: "Castle not found | Lulu Jump" }, { name: "robots", content: "noindex" }],
       };
     }
     const { castle } = loaderData;
-    const title = `${castle.name} — Jumping Castle Hire | Bounce & Beyond`;
+    const title = `${castle.name} — Jumping Castle Hire | Lulu Jump`;
     return {
       meta: [
         { title },

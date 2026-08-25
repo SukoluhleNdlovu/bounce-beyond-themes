@@ -10,7 +10,7 @@ import { castles } from "@/data/castles";
 export const Route = createFileRoute("/custom-designs")({
   head: () => ({
     meta: [
-      { title: "Custom Jumping Castle Designs for Any Party Theme | Bounce & Beyond" },
+      { title: "Custom Jumping Castle Designs for Any Party Theme | Lulu Jump" },
       {
         name: "description",
         content:
