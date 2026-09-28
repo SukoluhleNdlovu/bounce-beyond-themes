@@ -5,6 +5,14 @@ import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/site/PageHero";
 import { galleryCategories, type GalleryCategory } from "@/data/content";
 import { castleImages } from "@/data/castles";
+import castle7 from "@/assets/castle7.png";
+import gallery1 from "@/assets/gallery1.jpg";
+import gallery2 from "@/assets/gallery2.jpg";
+import gallery3 from "@/assets/gallery3.jpg";
+import gallery4 from "@/assets/gallery4.jpg";
+import unicornTheme from "@/assets/unicorn theme.jpg";
+import princessTheme from "@/assets/princess-theme.png";
+import pawPatrol from "@/assets/paw-patrol.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -26,11 +34,21 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const images: Array<{ src: string; alt: string; category: Exclude<GalleryCategory, "All"> }> =
-  castleImages.map((src, index) => ({
-    src,
-    alt: `Jumping castle photo ${index + 1}`,
-    category: "Jumping Castles",
-  }));
+  [
+    ...castleImages.map((src, index) => ({
+      src,
+      alt: `Jumping castle photo ${index + 1}`,
+      category: "Jumping Castles" as const,
+    })),
+    { src: castle7, alt: "Jumping castle photo 7", category: "Jumping Castles" },
+    { src: gallery1, alt: "Party gallery photo 1", category: "Jumping Castles" },
+    { src: gallery2, alt: "Party gallery photo 2", category: "Jumping Castles" },
+    { src: gallery3, alt: "Party gallery photo 3", category: "Jumping Castles" },
+    { src: gallery4, alt: "Party gallery photo 4", category: "Jumping Castles" },
+    { src: unicornTheme, alt: "Unicorn and rainbow themed castle", category: "Jumping Castles" },
+    { src: princessTheme, alt: "Princess themed castle", category: "Jumping Castles" },
+    { src: pawPatrol, alt: "Paw Patrol themed castle", category: "Jumping Castles" },
+  ];
 
 function Gallery() {
   const [filter, setFilter] = useState<GalleryCategory>("All");

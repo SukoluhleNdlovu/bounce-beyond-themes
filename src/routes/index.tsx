@@ -59,6 +59,12 @@ const whyUs = [
   },
 ];
 
+const featuredCastleNames: Record<string, string> = {
+  "unicorn-castle": "Bouncy Castle",
+  "dinosaur-castle": "Moonwalk",
+  "safari-adventure-castle": "Bubble House",
+};
+
 function Home() {
   return (
     <>
@@ -135,11 +141,16 @@ function Home() {
           <SectionHeading
             eyebrow="Our castles"
             title="Featured Jumping Castles"
-            subtitle="Six colourful castles to choose from — every one of them can be dressed up to match your theme."
+            subtitle="Four colourful castles to choose from — every one of them can be dressed up to match your theme."
           />
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {castles.map((c) => (
-              <CastleCard key={c.id} castle={c} />
+            {castles
+              .filter((c) => c.slug !== "superhero-castle" && c.slug !== "rainbow-party-castle")
+              .map((c) => (
+              <CastleCard
+                key={c.id}
+                castle={{ ...c, name: featuredCastleNames[c.slug] ?? c.name }}
+              />
             ))}
           </div>
           <div className="mt-10 text-center">
