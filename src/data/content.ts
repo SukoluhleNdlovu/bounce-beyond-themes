@@ -55,16 +55,46 @@ export const faqs = [
     q: "How long can I hire a jumping castle?",
     a: "Standard hire is a full day (usually 08:00 – 17:00). Overnight and multi-day hire can be arranged on request.",
   },
-  { q: "Do you deliver?", a: "Yes. We deliver throughout our service area. Delivery fees depend on distance and are confirmed with your quote." },
-  { q: "Do you set up the jumping castle?", a: "Always. Our team delivers, sets up, tests the castle and collects it afterwards — you don't lift a finger." },
-  { q: "Can I request a specific theme?", a: "Absolutely. Choose one of our existing castle designs or request a custom theme to match your party." },
-  { q: "Can you customise a jumping castle?", a: "Yes — customisation is our speciality. We adapt decor, colours and props to suit your theme. Submit a custom design request and we'll take it from there." },
-  { q: "How far do you deliver?", a: "We cover our main service area free of charge and travel further for an additional fee. Ask us about your location." },
-  { q: "How much space do I need?", a: "Allow roughly 1m of clearance around the castle on flat ground, plus at least 1m of access width to get equipment in. Exact sizes are listed on each castle page." },
-  { q: "What happens if it rains?", a: "Safety first — castles cannot be used in heavy rain or strong wind. We'll work with you to reschedule where possible." },
-  { q: "What ages are the jumping castles suitable for?", a: "Most of our castles suit children from about 2 to 12 years. Each castle page lists its recommended age range." },
-  { q: "How far in advance should I book?", a: "Two to four weeks is ideal, especially for weekends and school holidays. Last-minute requests are welcome if we have availability." },
-  { q: "Do you provide supervision?", a: "Adult supervision is the responsibility of the hirer. We provide clear safety guidelines at setup and can recommend supervisors on request." },
+  {
+    q: "Do you deliver?",
+    a: "Yes. We deliver throughout our service area. Delivery fees depend on distance and are confirmed with your quote.",
+  },
+  {
+    q: "Do you set up the jumping castle?",
+    a: "Always. Our team delivers, sets up, tests the castle and collects it afterwards — you don't lift a finger.",
+  },
+  {
+    q: "Can I request a specific theme?",
+    a: "Absolutely. Choose one of our existing castle designs or request a custom theme to match your party.",
+  },
+  {
+    q: "Can you customise a jumping castle?",
+    a: "Yes — customisation is our speciality. We adapt decor, colours and props to suit your theme. Submit a custom design request and we'll take it from there.",
+  },
+  {
+    q: "How far do you deliver?",
+    a: "We cover our main service area free of charge and travel further for an additional fee. Ask us about your location.",
+  },
+  {
+    q: "How much space do I need?",
+    a: "Allow roughly 1m of clearance around the castle on flat ground, plus at least 1m of access width to get equipment in. Exact sizes are listed on each castle page.",
+  },
+  {
+    q: "What happens if it rains?",
+    a: "Safety first — castles cannot be used in heavy rain or strong wind. We'll work with you to reschedule where possible.",
+  },
+  {
+    q: "What ages are the jumping castles suitable for?",
+    a: "Most of our castles suit children from about 2 to 12 years. Each castle page lists its recommended age range.",
+  },
+  {
+    q: "How far in advance should I book?",
+    a: "Two to four weeks is ideal, especially for weekends and school holidays. Last-minute requests are welcome if we have availability.",
+  },
+  {
+    q: "Do you provide supervision?",
+    a: "Adult supervision is the responsibility of the hirer. We provide clear safety guidelines at setup and can recommend supervisors on request.",
+  },
 ];
 
 export const steps = [
@@ -90,13 +120,6 @@ export const steps = [
   },
 ];
 
-export const galleryCategories = [
-  "All",
-  "Jumping Castles",
-  "Birthday Parties",
-  "Custom Themes",
-  "Events",
-  "Decorations",
-] as const;
+export const galleryCategories = ["All", "Jumping Castles"] as const;
 
 export type GalleryCategory = (typeof galleryCategories)[number];

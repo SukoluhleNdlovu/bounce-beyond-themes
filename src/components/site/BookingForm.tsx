@@ -140,7 +140,12 @@ export function BookingForm({ defaultCastle }: { defaultCastle?: string | undefi
           </div>
           <div className="sm:col-span-2">
             <Label htmlFor="preferredTheme">Preferred Theme</Label>
-            <select id="preferredTheme" name="preferredTheme" className={fieldClass} defaultValue="">
+            <select
+              id="preferredTheme"
+              name="preferredTheme"
+              className={fieldClass}
+              defaultValue=""
+            >
               <option value="">No preference</option>
               {themes.map((t) => (
                 <option key={t.name}>{t.name}</option>
@@ -155,16 +160,6 @@ export function BookingForm({ defaultCastle }: { defaultCastle?: string | undefi
         <div>
           <Label htmlFor="notes">Additional Notes</Label>
           <Textarea id="notes" name="notes" rows={4} className="mt-1.5 rounded-xl" />
-        </div>
-        <div>
-          <Label htmlFor="inspiration">Upload Inspiration Image</Label>
-          <Input
-            id="inspiration"
-            name="inspiration"
-            type="file"
-            accept="image/*"
-            className="mt-1.5 h-11 rounded-xl"
-          />
         </div>
       </fieldset>
 

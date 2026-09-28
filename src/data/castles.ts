@@ -1,17 +1,13 @@
-import princess from "@/assets/castle-princess.jpg";
-import superhero from "@/assets/castle-superhero.jpg";
-import unicorn from "@/assets/castle-unicorn.jpg";
-import dinosaur from "@/assets/castle-dinosaur.jpg";
-import safari from "@/assets/castle-safari.jpg";
-import rainbow from "@/assets/castle-rainbow.jpg";
+import castle1 from "@/assets/castle1.jpeg";
+import castle2 from "@/assets/castle2.jpeg";
+import castle3 from "@/assets/castle3.jpeg";
+import castle4 from "@/assets/castle4.jpeg";
+import castle5 from "@/assets/castle5.jpeg";
 
-export type CastleCategory =
-  | "Princess"
-  | "Superhero"
-  | "Animals"
-  | "Sports"
-  | "Fantasy"
-  | "Other";
+
+export const castleImages = [castle1, castle2, castle3, castle4, castle5];
+
+export type CastleCategory = "Princess" | "Superhero" | "Animals" | "Sports" | "Fantasy" | "Other";
 
 export interface Castle {
   id: string;
@@ -51,7 +47,7 @@ export const castles: Castle[] = [
     shortDescription: "A pretty-in-pink fairytale castle with turrets and a royal entrance.",
     description:
       "Our Princess Castle turns any garden into a fairytale kingdom. Soft pink panels, sparkling turrets and a royal archway entrance make it the favourite for princess-themed birthdays. Optional bunting and crown decorations available.",
-    images: [princess],
+    images: [castleImages[0]!],
     price: "From R850 / day",
     dimensions: "4m x 4m x 3.5m",
     capacity: "Up to 8 children at a time",
@@ -75,7 +71,7 @@ export const castles: Castle[] = [
     shortDescription: "Bold red and blue action castle with a built-in slide.",
     description:
       "Calling all little heroes! This bold red and blue castle features a built-in slide and comic-style artwork — perfect for superhero parties and high-energy celebrations.",
-    images: [superhero],
+    images: [castleImages[1]!],
     price: "From R950 / day",
     dimensions: "5m x 4m x 3.5m",
     capacity: "Up to 10 children at a time",
@@ -99,7 +95,7 @@ export const castles: Castle[] = [
     shortDescription: "Pastel unicorn castle with a rainbow arch and magical details.",
     description:
       "Pastel pinks, magical rainbows and a friendly unicorn arch. A dreamy centrepiece for unicorn, rainbow and pastel-themed birthday parties.",
-    images: [unicorn],
+    images: [castleImages[2]!],
     price: "From R900 / day",
     dimensions: "4.5m x 4m x 3.5m",
     capacity: "Up to 8 children at a time",
@@ -119,7 +115,7 @@ export const castles: Castle[] = [
     shortDescription: "Roar-some jungle-green castle with dinosaur characters.",
     description:
       "A prehistoric adventure for little explorers. Jungle-green panels with friendly dinosaur characters and plenty of bouncing space.",
-    images: [dinosaur],
+    images: [castleImages[3]!],
     price: "From R850 / day",
     dimensions: "4m x 4m x 3m",
     capacity: "Up to 8 children at a time",
@@ -139,7 +135,7 @@ export const castles: Castle[] = [
     shortDescription: "Big-five safari castle with lion, giraffe and zebra artwork.",
     description:
       "Take the party on safari. Bright savanna artwork, a friendly lion at the entrance and a roomy bounce area for wild adventures.",
-    images: [safari],
+    images: [castleImages[4]!],
     price: "From R950 / day",
     dimensions: "5m x 4.5m x 3.5m",
     capacity: "Up to 10 children at a time",
@@ -159,7 +155,7 @@ export const castles: Castle[] = [
     shortDescription: "Bright all-rounder with a slide — suits absolutely any theme.",
     description:
       "Our most versatile castle. Bright rainbow stripes and a fun slide make it a great fit for any celebration, and it is the easiest castle to dress up in your own colours and decorations.",
-    images: [rainbow],
+    images: [castleImages[0]!],
     price: "From R900 / day",
     dimensions: "5m x 4m x 3.5m",
     capacity: "Up to 10 children at a time",

@@ -1,6 +1,6 @@
 # Bounce Bonanza
 
-# Build a Modern Jumping Castle Rental Website
+## Build a Modern Jumping Castle Rental Website
 
 Create a modern, fun, professional, mobile-responsive website for a jumping castle hiring/rental business that provides jumping castles for birthdays, children's parties, school events, family gatherings, celebrations, and other events.
 
@@ -16,27 +16,27 @@ A major unique selling point is that the business can **customise the jumping ca
 
 For example:
 
-* Princess theme
+- Princess theme
 
-* Superhero theme
+- Superhero theme
 
-* Unicorn theme
+- Unicorn theme
 
-* Cars/racing theme
+- Cars/racing theme
 
-* Safari/jungle theme
+- Safari/jungle theme
 
-* Football/sports theme
+- Football/sports theme
 
-* Mermaid theme
+- Mermaid theme
 
-* Space theme
+- Space theme
 
-* Dinosaur theme
+- Dinosaur theme
 
-* Barbie-inspired pink theme
+- Barbie-inspired pink theme
 
-* Custom colours and decorations
+- Custom colours and decorations
 
 Customers should be able to browse the available jumping castles and also request a **customised design based on their event theme**.
 
@@ -48,7 +48,7 @@ The website should make it clear that customers can either:
 
 ---
 
-# Website Structure
+## Website Structure
 
 Create the following customer-facing pages:
 
@@ -72,7 +72,7 @@ Do NOT create an admin dashboard or admin functionality.
 
 ---
 
-# 1. HOME PAGE
+## 1. HOME PAGE
 
 Create an attractive hero section immediately communicating what the business does.
 
@@ -82,7 +82,7 @@ Hero heading:
 
 Supporting text:
 
-"Fun, colourful jumping castles for birthdays, parties and special events — with custom designs made to match your theme."
+"Fun, colourful jumping castles for birthdays, parties and special events with custom designs made to match your theme."
 
 Primary CTA:
 
@@ -96,15 +96,15 @@ The hero section should feature a large, high-quality jumping castle visual and 
 
 Add playful but professional animations such as:
 
-* Floating balloons
+- Floating balloons
 
-* Subtle confetti
+- Subtle confetti
 
-* Smooth entrance animations
+- Smooth entrance animations
 
-* Hover effects
+- Hover effects
 
-* Soft bouncing elements
+- Soft bouncing elements
 
 Do not overdo animations.
 
@@ -116,15 +116,15 @@ Do not overdo animations.
 
 Create 4–5 feature cards:
 
-* 🎈 Fun for Every Celebration
+- 🎈 Fun for Every Celebration
 
-* 🎨 Custom Designs Available
+- 🎨 Custom Designs Available
 
-* ⭐ Safe & Reliable
+- ⭐ Safe & Reliable
 
-* 🚚 Delivery & Setup
+- 🚚 Delivery & Setup
 
-* 🎉 Perfect for Birthdays & Events
+- 🎉 Perfect for Birthdays & Events
 
 Use modern icons and short descriptions.
 
@@ -136,23 +136,23 @@ Display the **6 currently available jumping castles** in a visually appealing ca
 
 Each castle card should include:
 
-* Large image
+- Large image
 
-* Castle name
+- Castle name
 
-* Theme/category
+- Theme/category
 
-* Short description
+- Short description
 
-* Suitable age range
+- Suitable age range
 
-* Size/dimensions if available
+- Size/dimensions if available
 
-* Availability indicator
+- Availability indicator
 
-* "View Details" button
+- "View Details" button
 
-* "Hire This Castle" button
+- "Hire This Castle" button
 
 Use placeholder information/images for the six castles because the actual castle details and images will be added later.
 
@@ -194,21 +194,21 @@ Example text:
 
 Show several example theme cards such as:
 
-* Princess
+- Princess
 
-* Superhero
+- Superhero
 
-* Unicorn
+- Unicorn
 
-* Dinosaur
+- Dinosaur
 
-* Football
+- Football
 
-* Safari
+- Safari
 
-* Mermaid
+- Mermaid
 
-* Space
+- Space
 
 CTA:
 
@@ -240,15 +240,15 @@ Use placeholder images initially.
 
 Categories:
 
-* Birthday Parties
+- Birthday Parties
 
-* Custom Themes
+- Custom Themes
 
-* Kids Parties
+- Kids Parties
 
-* Events
+- Events
 
-* Decorations
+- Decorations
 
 Add:
 
@@ -266,11 +266,11 @@ Example:
 
 Include:
 
-* Customer name
+- Customer name
 
-* Star rating
+- Star rating
 
-* Event type
+- Event type
 
 Clearly structure the data so real testimonials can easily replace the placeholders.
 
@@ -294,7 +294,7 @@ Buttons:
 
 ---
 
-# 2. JUMPING CASTLES PAGE
+## 2. JUMPING CASTLES PAGE
 
 Create a dedicated catalogue page displaying the current 6 jumping castles.
 
@@ -302,43 +302,43 @@ Use a responsive card grid.
 
 Each product card should have:
 
-* Product image
+- Product image
 
-* Name
+- Name
 
-* Theme
+- Theme
 
-* Description
+- Description
 
-* Dimensions
+- Dimensions
 
-* Recommended age
+- Recommended age
 
-* Capacity
+- Capacity
 
-* Price / "Request a Quote" depending on the business model
+- Price / "Request a Quote" depending on the business model
 
-* Availability
+- Availability
 
-* View Details
+- View Details
 
-* Hire Now
+- Hire Now
 
 Add filtering options:
 
-* All
+- All
 
-* Princess
+- Princess
 
-* Superhero
+- Superhero
 
-* Animals
+- Animals
 
-* Sports
+- Sports
 
-* Fantasy
+- Fantasy
 
-* Other
+- Other
 
 Add sorting options if appropriate.
 
@@ -346,35 +346,35 @@ The page should be designed so that adding the 7th, 8th, 9th castle later does n
 
 ---
 
-# 3. JUMPING CASTLE DETAILS PAGE
+## 3. JUMPING CASTLE DETAILS PAGE
 
 When a customer selects a jumping castle, show a detailed product page.
 
 Include:
 
-* Large product image/gallery
+- Large product image/gallery
 
-* Castle name
+- Castle name
 
-* Theme
+- Theme
 
-* Description
+- Description
 
-* Dimensions
+- Dimensions
 
-* Suitable age range
+- Suitable age range
 
-* Recommended number of children
+- Recommended number of children
 
-* Setup requirements
+- Setup requirements
 
-* What's included
+- What's included
 
-* Rental information
+- Rental information
 
-* Price or quote request
+- Price or quote request
 
-* Availability information
+- Availability information
 
 Include a prominent:
 
@@ -392,7 +392,7 @@ with a CTA:
 
 ---
 
-# 4. CUSTOM DESIGNS PAGE
+## 4. CUSTOM DESIGNS PAGE
 
 Make this page visually impressive because customisation is a key competitive advantage.
 
@@ -408,59 +408,59 @@ Create a visual theme gallery.
 
 Theme examples:
 
-* Princess
+- Princess
 
-* Barbie-inspired
+- Barbie-inspired
 
-* Unicorn
+- Unicorn
 
-* Dinosaur
+- Dinosaur
 
-* Superhero
+- Superhero
 
-* Football
+- Football
 
-* Safari
+- Safari
 
-* Mermaid
+- Mermaid
 
-* Space
+- Space
 
-* Cars
+- Cars
 
-* Rainbow
+- Rainbow
 
-* Custom Theme
+- Custom Theme
 
 Include a custom design request form.
 
 Form fields:
 
-* Full Name
+- Full Name
 
-* Email Address
+- Email Address
 
-* Phone Number
+- Phone Number
 
-* Event Date
+- Event Date
 
-* Event Type
+- Event Type
 
-* Preferred Jumping Castle
+- Preferred Jumping Castle
 
-* Birthday Theme
+- Birthday Theme
 
-* Preferred Colours
+- Preferred Colours
 
-* Child's Age
+- Child's Age
 
-* Number of Children
+- Number of Children
 
-* Additional Requirements
+- Additional Requirements
 
-* Upload Inspiration Image
+- Upload Inspiration Image
 
-* Additional Notes
+- Additional Notes
 
 CTA:
 
@@ -470,7 +470,7 @@ After submission, display a friendly confirmation message explaining that the bu
 
 ---
 
-# 5. HOW IT WORKS PAGE
+## 5. HOW IT WORKS PAGE
 
 Create a simple explanation of the rental process.
 
@@ -506,25 +506,25 @@ The jumping castle is delivered and set up for the event.
 
 ---
 
-# 6. ABOUT US PAGE
+## 6. ABOUT US PAGE
 
 Create a warm and trustworthy About Us page.
 
 Focus on:
 
-* Creating memorable children's parties
+- Creating memorable children's parties
 
-* Fun and entertainment
+- Fun and entertainment
 
-* Quality jumping castles
+- Quality jumping castles
 
-* Customer service
+- Customer service
 
-* Creativity
+- Creativity
 
-* Customised party experiences
+- Customised party experiences
 
-* Reliable delivery and setup
+- Reliable delivery and setup
 
 Include a section:
 
@@ -534,21 +534,21 @@ Use placeholder text that can easily be replaced with the real story of the busi
 
 ---
 
-# 7. GALLERY PAGE
+## 7. GALLERY PAGE
 
 Create a visually impressive masonry-style gallery.
 
 Gallery categories:
 
-* Jumping Castles
+- Jumping Castles
 
-* Birthday Parties
+- Birthday Parties
 
-* Custom Themes
+- Custom Themes
 
-* Events
+- Events
 
-* Decorations
+- Decorations
 
 Use placeholder images initially.
 
@@ -558,7 +558,7 @@ Clicking an image should open a larger lightbox view.
 
 ---
 
-# 8. FAQ PAGE
+## 8. FAQ PAGE
 
 Create frequently asked questions such as:
 
@@ -592,7 +592,7 @@ Use placeholder answers that can later be replaced with the company's actual pol
 
 ---
 
-# 9. CONTACT / BOOK NOW PAGE
+## 9. CONTACT / BOOK NOW PAGE
 
 Create a booking/request form.
 
@@ -602,39 +602,39 @@ Fields:
 
 ### Customer Information
 
-* Full Name
+- Full Name
 
-* Email
+- Email
 
-* Phone Number
+- Phone Number
 
 ### Event Information
 
-* Event Date
+- Event Date
 
-* Start Time
+- Start Time
 
-* End Time
+- End Time
 
-* Event Type
+- Event Type
 
-* Event Location
+- Event Location
 
-* Number of Children
+- Number of Children
 
 ### Castle Information
 
-* Select Jumping Castle
+- Select Jumping Castle
 
-* Existing Theme / Custom Theme
+- Existing Theme / Custom Theme
 
-* Preferred Theme
+- Preferred Theme
 
 ### Additional Information
 
-* Additional Notes
+- Additional Notes
 
-* Upload Inspiration Image
+- Upload Inspiration Image
 
 CTA:
 
@@ -648,7 +648,7 @@ Important: This is a **booking enquiry/request**, not an automatic confirmed res
 
 ---
 
-# NAVIGATION
+## NAVIGATION
 
 Create a clean navigation bar:
 
@@ -678,45 +678,45 @@ Make the navigation sticky while scrolling.
 
 ---
 
-# DESIGN STYLE
+## DESIGN STYLE
 
 The website should have a strong children's party aesthetic without looking childish or unprofessional.
 
 Use:
 
-* Bright but tasteful colours
+- Bright but tasteful colours
 
-* Rounded cards
+- Rounded cards
 
-* Large images
+- Large images
 
-* Playful typography
+- Playful typography
 
-* Modern sans-serif fonts
+- Modern sans-serif fonts
 
-* Soft shadows
+- Soft shadows
 
-* Rounded buttons
+- Rounded buttons
 
-* Balloon/confetti decorative elements
+- Balloon/confetti decorative elements
 
-* Smooth transitions
+- Smooth transitions
 
-* Plenty of whitespace
+- Plenty of whitespace
 
 Suggested colour direction:
 
-* Bright yellow
+- Bright yellow
 
-* Pink
+- Pink
 
-* Purple
+- Purple
 
-* Sky blue
+- Sky blue
 
-* Orange
+- Orange
 
-* White
+- White
 
 Use the colours consistently throughout the website.
 
@@ -724,69 +724,69 @@ The design should feel similar to a **premium children's party/event rental comp
 
 ---
 
-# RESPONSIVENESS
+## RESPONSIVENESS
 
 The website must be fully responsive.
 
 Optimise specifically for:
 
-* Desktop
+- Desktop
 
-* Laptop
+- Laptop
 
-* Tablet
+- Tablet
 
-* Mobile phones
+- Mobile phones
 
 On mobile:
 
-* Use a hamburger navigation
+- Use a hamburger navigation
 
-* Stack product cards
+- Stack product cards
 
-* Make buttons easy to tap
+- Make buttons easy to tap
 
-* Optimise image sizes
+- Optimise image sizes
 
-* Keep forms simple
+- Keep forms simple
 
-* Ensure text is readable
+- Ensure text is readable
 
-* Keep the booking CTA visible and accessible
+- Keep the booking CTA visible and accessible
 
 ---
 
-# PRODUCT DATA STRUCTURE
+## PRODUCT DATA STRUCTURE
 
 Create the jumping castle products in a reusable structure so the business can easily add more castles later.
 
 Each castle should support:
 
-* ID
+- ID
 
-* Name
+- Name
 
-* Description
+- Description
 
-* Category
+- Category
 
-* Theme
+- Theme
 
-* Images
+- Images
 
-* Price
+- Price
 
-* Dimensions
+- Dimensions
 
-* Capacity
+- Capacity
 
-* Recommended age
+- Recommended age
 
-* Availability status
+- Availability status
 
-* Features
+- Features
 
-* Customisation availability
+- Customisation availability
 
 Initially create exactly **6 placeholder jumping castles**.
 
@@ -794,7 +794,7 @@ Do not hard-code the six products into separate page sections. Use reusable prod
 
 ---
 
-# BOOKING EXPERIENCE
+## BOOKING EXPERIENCE
 
 The booking experience should be simple.
 
@@ -810,15 +810,15 @@ Make the process feel quick and straightforward.
 
 ---
 
-# CONTACT OPTIONS
+## CONTACT OPTIONS
 
 Include prominent contact options throughout the website:
 
-* Phone
+- Phone
 
-* WhatsApp
+- WhatsApp
 
-* Email
+- Email
 
 Use placeholder contact details that can easily be replaced with the real business information.
 
@@ -826,51 +826,51 @@ Include a floating WhatsApp button on mobile and desktop.
 
 ---
 
-# SEO
+## SEO
 
 Optimise the website for searches related to:
 
-* Jumping castle hire
+- Jumping castle hire
 
-* Jumping castle rental
+- Jumping castle rental
 
-* Jumping castles for birthdays
+- Jumping castles for birthdays
 
-* Kids party jumping castles
+- Kids party jumping castles
 
-* Birthday party entertainment
+- Birthday party entertainment
 
-* Custom jumping castles
+- Custom jumping castles
 
-* Party equipment hire
+- Party equipment hire
 
-* Event jumping castles
+- Event jumping castles
 
 Use appropriate page titles, meta descriptions, headings, alt text and semantic HTML.
 
 ---
 
-# PERFORMANCE
+## PERFORMANCE
 
 Optimise the website for fast loading.
 
 Use:
 
-* Responsive images
+- Responsive images
 
-* Lazy loading
+- Lazy loading
 
-* Optimised image sizes
+- Optimised image sizes
 
-* Clean component structure
+- Clean component structure
 
-* Minimal unnecessary animations
+- Minimal unnecessary animations
 
-* Mobile-first performance
+- Mobile-first performance
 
 ---
 
-# IMPORTANT REQUIREMENTS
+## IMPORTANT REQUIREMENTS
 
 1. This is a **customer-facing website only**.
 

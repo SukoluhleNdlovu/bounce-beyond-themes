@@ -6,6 +6,9 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { CustomDesignForm } from "@/components/site/CustomDesignForm";
 import { themes } from "@/data/content";
 import { castles } from "@/data/castles";
+import pawPatrol from "@/assets/paw-patrol.png";
+import princessTheme from "@/assets/princess-theme.png";
+import unicornTheme from "@/assets/unicorn theme.jpg";
 
 export const Route = createFileRoute("/custom-designs")({
   head: () => ({
@@ -52,6 +55,12 @@ const howCustom = [
   },
 ];
 
+const customDesignImages: Record<string, string> = {
+  "princess-castle": princessTheme,
+  "unicorn-castle": unicornTheme,
+  "superhero-castle": pawPatrol,
+};
+
 function CustomDesigns() {
   return (
     <>
@@ -66,10 +75,7 @@ function CustomDesigns() {
       </PageHero>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="How customisation works"
-          title="From your idea to their big day"
-        />
+        <SectionHeading eyebrow="How customisation works" title="From your idea to their big day" />
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {howCustom.map((s) => (
             <div key={s.title} className="rounded-3xl border border-border bg-card p-6 shadow-soft">
@@ -88,7 +94,7 @@ function CustomDesigns() {
           <SectionHeading
             eyebrow="Theme gallery"
             title="Popular themes we create"
-            subtitle="These are just the favourites — if it isn't on the list, we'll still make it happen."
+            subtitle="These are just the favourites if it isn't on the list, we'll still make it happen."
           />
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {themes.map((t) => (
@@ -96,8 +102,7 @@ function CustomDesigns() {
                 key={t.name}
                 className="rounded-3xl border border-border bg-card p-6 text-center shadow-soft transition-transform duration-300 hover:-translate-y-1"
               >
-                <span className="text-4xl">{t.emoji}</span>
-                <h3 className="mt-3 text-base font-bold">{t.name}</h3>
+                <h3 className="text-base font-bold">{t.name}</h3>
                 <p className="mt-1 text-xs text-muted-foreground">{t.blurb}</p>
               </div>
             ))}
@@ -109,7 +114,7 @@ function CustomDesigns() {
         <SectionHeading
           eyebrow="Start with a base castle"
           title="One castle, endless looks"
-          subtitle="Pick any castle as your starting point — we transform the styling around it."
+          subtitle="Pick any castle as your starting point we transform the styling around it."
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
           {castles.slice(0, 3).map((c) => (
@@ -120,7 +125,7 @@ function CustomDesigns() {
               className="group overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition-transform hover:-translate-y-1"
             >
               <img
-                src={c.images[0]}
+                src={customDesignImages[c.slug] ?? c.images[0]}
                 alt={`${c.name} available for custom theme styling`}
                 loading="lazy"
                 width={1024}
@@ -140,7 +145,7 @@ function CustomDesigns() {
         <SectionHeading
           eyebrow="Custom request"
           title="Tell us about your dream castle"
-          subtitle="Fill in as much as you can — we'll do the rest."
+          subtitle="Fill in as much as you can we'll do the rest."
         />
         <div className="mt-8">
           <CustomDesignForm />

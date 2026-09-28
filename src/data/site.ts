@@ -9,8 +9,8 @@ export const site = {
   phoneHref: "tel:+27820000000",
   whatsapp: "27820000000",
   whatsappMessage: "Hi! I'd like to enquire about hiring a jumping castle.",
-  email: "hello@bounceandbeyond.co.za",
-  area: "Johannesburg & surrounding areas",
+  email: "hello@lulujump.co.za",
+  area: "Gauteng",
   hours: "Mon – Sun, 07:00 – 19:00",
 };
 
@@ -20,7 +20,6 @@ export const whatsappLink = `https://wa.me/${site.whatsapp}?text=${encodeURIComp
 
 export const navLinks = [
   { to: "/", label: "Home" },
-  { to: "/castles", label: "Jumping Castles" },
   { to: "/custom-designs", label: "Custom Designs" },
   { to: "/how-it-works", label: "How It Works" },
   { to: "/gallery", label: "Gallery" },

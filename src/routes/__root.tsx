@@ -15,6 +15,7 @@ import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
+import logoImage from "@/assets/lulu_jump logo.png";
 
 function NotFoundComponent() {
   return (
@@ -81,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lulu Jump | Jumping Castle Hire for Kids Parties" },
+      { title: "LULU JUMPS EVENTS" },
       {
         name: "description",
         content:
@@ -99,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: logoImage, type: "image/png" },
     ],
   }),
   shellComponent: RootShell,

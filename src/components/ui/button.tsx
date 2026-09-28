@@ -9,7 +9,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow-soft hover:bg-primary/85 hover:-translate-y-0.5",
+        default:
+          "bg-primary text-primary-foreground shadow-soft hover:bg-primary/85 hover:-translate-y-0.5",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
           "border-2 border-primary/25 bg-background shadow-sm hover:bg-muted hover:text-foreground hover:border-primary/40 hover:-translate-y-0.5",
@@ -17,8 +18,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-muted hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-party text-primary-foreground shadow-playful hover:-translate-y-0.5 hover:brightness-110",
-        sunny: "bg-sunny text-sunshine-foreground shadow-playful hover:-translate-y-0.5 hover:brightness-105",
-        grape: "bg-grape text-grape-foreground shadow-soft hover:bg-grape/90 hover:-translate-y-0.5",
+        sunny:
+          "bg-sunny text-sunshine-foreground shadow-playful hover:-translate-y-0.5 hover:brightness-105",
+        grape:
+          "bg-grape text-grape-foreground shadow-soft hover:bg-grape/90 hover:-translate-y-0.5",
         sky: "bg-sky text-sky-foreground shadow-soft hover:bg-sky/90 hover:-translate-y-0.5",
       },
       size: {
@@ -35,7 +38,6 @@ const buttonVariants = cva(
     },
   },
 );
-
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {

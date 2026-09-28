@@ -24,9 +24,7 @@ export function CastleCard({ castle }: { castle: Castle }) {
         </span>
         <span
           className={`absolute right-3 top-3 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-bold ${
-            castle.available
-              ? "bg-mint text-foreground"
-              : "bg-muted text-muted-foreground"
+            castle.available ? "bg-mint text-foreground" : "bg-muted text-muted-foreground"
           }`}
         >
           <CheckCircle2 className="h-3 w-3" />

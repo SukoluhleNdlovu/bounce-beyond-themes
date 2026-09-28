@@ -3,7 +3,7 @@ import { Heart, Sparkles, ShieldCheck, Smile } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/site/PageHero";
 import { SectionHeading } from "@/components/site/SectionHeading";
-import partyDecor from "@/assets/party-decor.jpg";
+import { castleImages } from "@/data/castles";
 import { site } from "@/data/site";
 
 export const Route = createFileRoute("/about")({
@@ -26,10 +26,26 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { icon: Smile, title: "Fun first", text: "Every decision we make starts with: will the kids love it?" },
-  { icon: ShieldCheck, title: "Safety & quality", text: "Clean, inspected and properly anchored castles, every single time." },
-  { icon: Sparkles, title: "Creativity", text: "Custom themes and decor that make a party feel personal." },
-  { icon: Heart, title: "Service you can trust", text: "Clear communication, on-time delivery, friendly faces." },
+  {
+    icon: Smile,
+    title: "Fun first",
+    text: "Every decision we make starts with: will the kids love it?",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Safety & quality",
+    text: "Clean, inspected and properly anchored castles, every single time.",
+  },
+  {
+    icon: Sparkles,
+    title: "Creativity",
+    text: "Custom themes and decor that make a party feel personal.",
+  },
+  {
+    icon: Heart,
+    title: "Service you can trust",
+    text: "Clear communication, on-time delivery, friendly faces.",
+  },
 ];
 
 function About() {
@@ -44,8 +60,8 @@ function About() {
       <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="overflow-hidden rounded-[2rem] border-4 border-card shadow-playful">
           <img
-            src={partyDecor}
-            alt="Children celebrating at a colourful outdoor birthday party with balloons"
+            src={castleImages[1]}
+            alt="Jumping castle photographed outdoors"
             loading="lazy"
             width={1024}
             height={768}
@@ -55,10 +71,9 @@ function About() {
         <div>
           <h2 className="text-3xl font-extrabold">Why We Started</h2>
           <p className="mt-4 text-muted-foreground">
-            [Placeholder story — replace with the real business story.] It started with one
-            birthday party and one very excited group of children. We noticed how much a jumping
-            castle changed the whole day, and how few companies were willing to go the extra mile
-            to match the castle to the party's theme.
+            It started with one birthday party and one very excited group of children. We noticed
+            how much a jumping castle changed the whole day, and how few companies were willing to
+            go the extra mile to match the castle to the party's theme.
           </p>
           <p className="mt-4 text-muted-foreground">
             So we set out to do exactly that: reliable, spotless jumping castles delivered on time,
@@ -66,8 +81,8 @@ function About() {
             the birthday child is dreaming about this year.
           </p>
           <p className="mt-4 text-muted-foreground">
-            Today we look after birthdays, school events, church days and family gatherings — and
-            we still get just as excited about every single setup.
+            Today we look after birthdays, school events, church days and family gatherings and we
+            still get just as excited about every single setup.
           </p>
           <Button asChild variant="default" size="lg" className="mt-6">
             <Link to="/contact">Let's plan your party</Link>

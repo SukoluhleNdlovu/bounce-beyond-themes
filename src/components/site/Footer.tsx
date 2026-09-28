@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, MapPin, Clock, PartyPopper } from "lucide-react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { navLinks, site, whatsappLink } from "@/data/site";
+import logoImage from "@/assets/lulu_jump logo.png";
 
 export function Footer() {
   return (
@@ -8,10 +9,12 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3 lg:px-8">
         <div>
           <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-party text-primary-foreground">
-              <PartyPopper className="h-5 w-5" />
-            </span>
-            <span className="font-display text-xl font-bold">{site.name}</span>
+            <img
+              src={logoImage}
+              alt="Lulu Jump logo"
+              className="h-9 w-9 rounded-full object-cover"
+            />
+            <span className="font-display text-xl font-bold">Lulu Jump</span>
           </div>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">
             {site.tagline}. Fun, safe and colourful jumping castles for birthdays, kids parties,

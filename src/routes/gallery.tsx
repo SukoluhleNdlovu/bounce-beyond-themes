@@ -4,9 +4,7 @@ import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/site/PageHero";
 import { galleryCategories, type GalleryCategory } from "@/data/content";
-import { castles } from "@/data/castles";
-import partyDecor from "@/assets/party-decor.jpg";
-import heroImage from "@/assets/hero-castle.jpg";
+import { castleImages } from "@/data/castles";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -27,20 +25,12 @@ export const Route = createFileRoute("/gallery")({
   component: Gallery,
 });
 
-/** Placeholder gallery — swap in real party photos here. */
-const images: Array<{ src: string; alt: string; category: Exclude<GalleryCategory, "All"> }> = [
-  ...castles.map((c) => ({
-    src: c.images[0]!,
-    alt: `${c.name} jumping castle for hire`,
-    category: "Jumping Castles" as const,
-  })),
-  { src: heroImage, alt: "Jumping castle at a birthday party with balloons", category: "Birthday Parties" },
-  { src: partyDecor, alt: "Colourful balloon arch and birthday party decorations", category: "Decorations" },
-  { src: castles[0]!.images[0]!, alt: "Princess themed party castle setup", category: "Custom Themes" },
-  { src: castles[4]!.images[0]!, alt: "Safari castle at a school fun day event", category: "Events" },
-  { src: castles[5]!.images[0]!, alt: "Rainbow castle at a kids party", category: "Birthday Parties" },
-  { src: castles[1]!.images[0]!, alt: "Superhero themed custom castle", category: "Custom Themes" },
-];
+const images: Array<{ src: string; alt: string; category: Exclude<GalleryCategory, "All"> }> =
+  castleImages.map((src, index) => ({
+    src,
+    alt: `Jumping castle photo ${index + 1}`,
+    category: "Jumping Castles",
+  }));
 
 function Gallery() {
   const [filter, setFilter] = useState<GalleryCategory>("All");

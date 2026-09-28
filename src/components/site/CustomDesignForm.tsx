@@ -117,17 +117,6 @@ export function CustomDesignForm() {
       </div>
 
       <div>
-        <Label htmlFor="cd-image">Upload Inspiration Image</Label>
-        <Input
-          id="cd-image"
-          name="inspiration"
-          type="file"
-          accept="image/*"
-          className="mt-1.5 h-11 rounded-xl"
-        />
-      </div>
-
-      <div>
         <Label htmlFor="cd-notes">Additional Notes</Label>
         <Textarea id="cd-notes" name="notes" rows={3} className="mt-1.5 rounded-xl" />
       </div>

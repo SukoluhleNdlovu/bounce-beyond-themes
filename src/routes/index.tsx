@@ -1,26 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  Sparkles,
-  ShieldCheck,
-  Truck,
-  PartyPopper,
-  Cake,
-  Star,
-  ArrowRight,
-} from "lucide-react";
+import { Sparkles, ShieldCheck, Truck, PartyPopper, Cake, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { CastleCard } from "@/components/site/CastleCard";
 import { Balloons, Confetti } from "@/components/site/Decor";
-import { castles } from "@/data/castles";
-import { themes, testimonials, steps } from "@/data/content";
-import heroImage from "@/assets/hero-castle.jpg";
-import partyDecor from "@/assets/party-decor.jpg";
+import castle6 from "@/assets/castle6.png";
+import { castleImages, castles } from "@/data/castles";
+import { themes, steps } from "@/data/content";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Jumping Castle Hire for Birthdays & Kids Parties | Lulu Jump" },
+      { title: "LULU JUMPS EVENTS" },
       {
         name: "description",
         content:
@@ -28,7 +19,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Jumping Castle Hire for Birthdays & Kids Parties | Lulu Jump",
+        content: "LULU JUMPS EVENTS",
       },
       {
         property: "og:description",
@@ -44,7 +35,7 @@ const whyUs = [
   {
     icon: PartyPopper,
     title: "Fun for Every Celebration",
-    text: "Birthdays, school days, church events and family gatherings — we bring the bounce.",
+    text: "Birthdays, school days, church events and family gatherings we bring the bounce.",
   },
   {
     icon: Sparkles,
@@ -59,7 +50,7 @@ const whyUs = [
   {
     icon: Truck,
     title: "Delivery & Setup",
-    text: "We deliver, set up, test and collect — you just enjoy the party.",
+    text: "We deliver, set up, test and collect you just enjoy the party.",
   },
   {
     icon: Cake,
@@ -83,12 +74,12 @@ function Home() {
               Make Their Special Day <span className="text-sunshine">Unforgettable!</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-muted-foreground">
-              Fun, colourful jumping castles for birthdays, parties and special events — with
-              custom designs made to match your theme.
+              Fun, colourful jumping castles for birthdays, parties and special events with custom
+              designs made to match your theme.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild variant="default" size="xl">
-                <Link to="/castles">View Jumping Castles</Link>
+                <Link to="/gallery">See Party Ideas</Link>
               </Button>
               <Button asChild variant="outline" size="xl">
                 <Link to="/custom-designs">Request a Custom Design</Link>
@@ -99,7 +90,7 @@ function Home() {
           <div className="relative animate-rise">
             <div className="overflow-hidden rounded-[2rem] border-4 border-card shadow-playful">
               <img
-                src={heroImage}
+                src={castle6}
                 alt="Colourful jumping castle set up in a sunny garden for a children's birthday party"
                 width={1600}
                 height={1100}
@@ -153,8 +144,8 @@ function Home() {
           </div>
           <div className="mt-10 text-center">
             <Button asChild variant="default" size="lg">
-              <Link to="/castles">
-                View All Jumping Castles <ArrowRight className="h-4 w-4" />
+              <Link to="/gallery">
+                See Party Inspiration <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -217,26 +208,24 @@ function Home() {
         <SectionHeading
           eyebrow="Birthday inspiration"
           title="Parties we've bounced at"
-          subtitle="Castles, decorations and happy faces — a peek at what your celebration could look like."
+          subtitle="Castles, decorations and happy faces a peek at what your celebration could look like."
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {[castles[0], castles[2], castles[4], { images: [partyDecor], name: "Party decorations" }]
-            .filter(Boolean)
-            .map((item, i) => (
-              <div
-                key={i}
-                className="overflow-hidden rounded-3xl border border-border shadow-soft"
-              >
-                <img
-                  src={(item as { images: string[] }).images[0]}
-                  alt={`${(item as { name: string }).name} at a children's birthday party`}
-                  loading="lazy"
-                  width={1024}
-                  height={768}
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-            ))}
+          {castleImages.map((image, i) => (
+            <div
+              key={image}
+              className="overflow-hidden rounded-3xl border border-border shadow-soft"
+            >
+              <img
+                src={image}
+                alt={`Jumping castle photo ${i + 1}`}
+                loading="lazy"
+                width={1024}
+                height={768}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+          ))}
         </div>
         <div className="mt-8 text-center">
           <Button asChild variant="default" size="lg">
@@ -245,47 +234,25 @@ function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="bg-muted/40 py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Happy parents" title="What our customers say" />
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {testimonials.map((t) => (
-              <figure key={t.name} className="rounded-3xl bg-card p-6 shadow-soft">
-                <div className="flex gap-0.5" aria-label={`${t.rating} out of 5 stars`}>
-                  {Array.from({ length: t.rating }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-current text-sunshine" />
-                  ))}
-                </div>
-                <blockquote className="mt-3 text-sm text-muted-foreground">"{t.quote}"</blockquote>
-                <figcaption className="mt-4 text-sm font-bold">
-                  {t.name}
-                  <span className="block text-xs font-normal text-muted-foreground">
-                    {t.eventType}
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FINAL CTA */}
-      <section className="relative overflow-hidden bg-party py-16 text-primary-foreground">
-        <Balloons />
-        <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-extrabold sm:text-4xl">
-            Ready to Make Your Party Unforgettable?
-          </h2>
-          <p className="mt-4 text-base opacity-90">
-            Choose your favourite jumping castle or let us create a design that matches your
-            celebration.
+      <section className="relative overflow-hidden bg-white py-16 text-foreground">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,200,82,0.18),_transparent_25%),radial-gradient(circle_at_bottom_right,_rgba(255,122,162,0.18),_transparent_25%)]" />
+        <div className="absolute left-10 top-10 h-20 w-20 rounded-full border-4 border-pink-200 bg-pink-50/80" />
+        <div className="absolute right-16 top-16 h-14 w-14 rotate-12 rounded-[30%] border-4 border-yellow-200 bg-yellow-50/80" />
+        <div className="absolute bottom-10 left-1/4 h-3 w-3 rounded-full bg-pink-300" />
+        <div className="absolute bottom-16 right-1/4 h-3 w-3 rounded-full bg-yellow-300" />
+        <div className="absolute bottom-12 left-2/3 h-2 w-2 rounded-full bg-purple-300" />
+        <div className="relative mx-auto max-w-3xl rounded-[2rem] border border-pink-100 bg-white/90 px-6 py-12 shadow-[0_20px_60px_rgba(217,70,239,0.08)] sm:px-10">
+          <h2 className="text-3xl font-extrabold sm:text-4xl">Ready to Make Your Party Unforgettable?</h2>
+          <p className="mt-4 text-base text-muted-foreground">
+            Choose your favourite style or let us create a custom look that matches your
+            celebration perfectly.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button asChild variant="default" size="xl">
-              <Link to="/castles">Browse Castles</Link>
+              <Link to="/gallery">See Party Ideas</Link>
             </Button>
-            <Button asChild variant="outline" size="xl" className="bg-background">
+            <Button asChild variant="outline" size="xl" className="border-pink-200 bg-white text-foreground">
               <Link to="/custom-designs">Request a Custom Design</Link>
             </Button>
           </div>
