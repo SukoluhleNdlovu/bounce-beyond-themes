@@ -1,4 +1,4 @@
-# Bounce Bonanza
+# Bounce Beyond
 
 ## Build a Modern Jumping Castle Rental Website
 
@@ -901,16 +901,6 @@ Use:
 14. The primary conversion goal is getting customers to **request a booking or custom design**.
 
 Build the website as a polished, production-quality jumping castle rental website rather than a basic template.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3c1bbea1-ab3d-4ebe-93ba-1a7cfda6c929).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
