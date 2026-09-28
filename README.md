@@ -1,4 +1,4 @@
-# Bounce Bonanza
+# Bounce Beyond
 
 ## Build a Modern Jumping Castle Rental Website
 
