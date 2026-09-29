@@ -13,7 +13,7 @@ import unicornTheme from "@/assets/unicorn theme.jpg";
 export const Route = createFileRoute("/custom-designs")({
   head: () => ({
     meta: [
-      { title: "Custom Jumping Castle Designs for Any Party Theme | Lulu Jump" },
+      { title: "Custom Jumping Castle Designs for Any Party Theme | Lulu Jumps" },
       {
         name: "description",
         content:

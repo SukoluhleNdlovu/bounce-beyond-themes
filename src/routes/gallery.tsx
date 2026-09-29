@@ -17,7 +17,7 @@ import pawPatrol from "@/assets/paw-patrol.png";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery | Jumping Castles at Real Parties | Lulu Jump" },
+      { title: "Gallery | Jumping Castles at Real Parties | Lulu Jumps" },
       {
         name: "description",
         content:

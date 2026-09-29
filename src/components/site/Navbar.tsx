@@ -16,7 +16,7 @@ export function Navbar() {
       >
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <img src={logoImage} alt="Lulu Jump logo" className="h-9 w-9 rounded-full object-cover" />
-          <span className="font-display text-lg font-bold leading-none sm:text-xl">Lulu Jump</span>
+          <span className="font-display text-lg font-bold leading-none sm:text-xl">Lulu Jumps</span>
         </Link>
 
         <ul className="hidden items-center gap-1 xl:flex">

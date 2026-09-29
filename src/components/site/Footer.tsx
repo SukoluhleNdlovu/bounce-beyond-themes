@@ -14,7 +14,7 @@ export function Footer() {
               alt="Lulu Jump logo"
               className="h-9 w-9 rounded-full object-cover"
             />
-            <span className="font-display text-xl font-bold">Lulu Jump</span>
+            <span className="font-display text-xl font-bold">Lulu Jumps</span>
           </div>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">
             {site.tagline}. Fun, safe and colourful jumping castles for birthdays, kids parties,

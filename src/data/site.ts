@@ -3,7 +3,7 @@
  * business details. Everything on the site reads from here.
  */
 export const site = {
-  name: "Lulu Jump",
+  name: "Lulu Jumps",
   tagline: "Jumping Castle Hire & Custom Party Designs",
   phone: "+27 82 000 0000",
   phoneHref: "tel:+27820000000",
