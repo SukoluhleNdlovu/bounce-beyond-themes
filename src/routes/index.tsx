@@ -1,10 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Sparkles, ShieldCheck, Truck, PartyPopper, Cake, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { CastleCard } from "@/components/site/CastleCard";
 import { Balloons, Confetti } from "@/components/site/Decor";
 import castle6 from "@/assets/castle6.png";
+import funIllustr from "@/assets/fun-illustr.jpg";
+import customDesignIllustr from "@/assets/custom-design-illustr.png";
+import safeReliableIllustr from "@/assets/safe-reliable-illustr.png";
+import deliverySafetyIllustr from "@/assets/delivery-safety-illustr.png";
+import perfectBirthdayIllustr from "@/assets/perfect-birthday-illustr.png";
 import { castleImages, castles } from "@/data/castles";
 import { themes, steps } from "@/data/content";
 
@@ -33,27 +38,27 @@ export const Route = createFileRoute("/")({
 
 const whyUs = [
   {
-    icon: PartyPopper,
+    image: funIllustr,
     title: "Fun for Every Celebration",
     text: "Birthdays, school days, church events and family gatherings we bring the bounce.",
   },
   {
-    icon: Sparkles,
+    image: customDesignIllustr,
     title: "Custom Designs Available",
     text: "We style your castle to match your party theme, colours and decorations.",
   },
   {
-    icon: ShieldCheck,
+    image: safeReliableIllustr,
     title: "Safe & Reliable",
     text: "Clean, well-maintained castles with safety netting and proper anchoring every time.",
   },
   {
-    icon: Truck,
+    image: deliverySafetyIllustr,
     title: "Delivery & Setup",
     text: "We deliver, set up, test and collect you just enjoy the party.",
   },
   {
-    icon: Cake,
+    image: perfectBirthdayIllustr,
     title: "Perfect for Birthdays",
     text: "The easiest way to make a birthday feel unforgettable for kids of all ages.",
   },
@@ -123,13 +128,22 @@ function Home() {
           {whyUs.map((f) => (
             <div
               key={f.title}
-              className="rounded-3xl border border-border bg-card p-6 shadow-soft transition-transform duration-300 hover:-translate-y-1"
+              className="flex h-full flex-col rounded-3xl border border-border bg-card p-6 shadow-soft transition-transform duration-300 hover:-translate-y-1"
             >
-              <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-party text-primary-foreground">
-                <f.icon className="h-6 w-6" />
-              </span>
-              <h3 className="mt-4 text-lg font-bold">{f.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{f.text}</p>
+              <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-white p-2">
+                <img
+                  src={f.image}
+                  alt={f.title}
+                  loading="lazy"
+                  width={1024}
+                  height={768}
+                  className="h-full w-full object-contain [-webkit-mask-image:radial-gradient(ellipse_at_center,black_68%,transparent_100%)] [mask-image:radial-gradient(ellipse_at_center,black_68%,transparent_100%)]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col">
+                <h3 className="mt-5 text-lg font-bold">{f.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{f.text}</p>
+              </div>
             </div>
           ))}
         </div>
